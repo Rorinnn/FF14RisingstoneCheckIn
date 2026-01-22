@@ -572,7 +572,7 @@ public class ApiClient : IDisposable
 
     private void Log(string message)
     {
-        OnLogMessage?.Invoke($"[{DateTime.Now:HH:mm:ss}] {message}");
+        OnLogMessage?.Invoke(message);
     }
 
     public void Dispose()
